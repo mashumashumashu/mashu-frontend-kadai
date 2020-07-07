@@ -7,7 +7,8 @@ header {
 }
 
 nav {
-  margin: 0 130px;
+  width: 90%;
+  margin: 0 auto;
   height: 100%;
 }
 
@@ -55,3 +56,76 @@ nav {
 /* main */
 
 /* footer */
+
+
+/* for tablet */
+@media screen and (max-width: 991px) {
+  /* common */
+
+  /* header */
+  header {
+    background-color: #000000;
+    height: 60px;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0;
+    padding: 0!important;
+  }
+
+  .navbar-brand {
+    padding-left: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  #hambarger-button {
+    width: 18px;
+    height: 18px;
+  }
+
+  #hambarger-button span {
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 3px 0;
+    border-radius: 2px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    background-color: #000000;
+  }
+
+  .nav-item {
+    padding: 0 6%;
+  }
+
+  .nav-item:not(.dropdown) {
+    height: 50px;
+  }
+
+  .nav-link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .dropdown-menu {
+    margin-top: 0;
+  }
+
+  .dropdown-item {
+    width: 100%;
+  }
+
+  /* main */
+
+  /* footer */
+
+}
