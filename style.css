@@ -3,10 +3,20 @@ body {
   font-family: verdana;
 }
 
+h1 {
+  font-size: 36px;
+  font-family: "Times New Roman", serif;
+}
+
+p {
+  font-size: 14px;
+}
+
 /* header */
 header {
   background-color: rgba(0, 0, 0, 0.5);
   height: 90px;
+  position: relative; /* 背景を前面に出すため */
 }
 
 header nav {
@@ -55,6 +65,34 @@ header .dropdown-item:hover {
 
 
 /* main */
+main .top-photo {
+  margin-top: -90px;
+  background-image: url(./cafe.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: calc(9/16 * 100vw);
+}
+
+main .top-photo h1 {
+  writing-mode: vertical-rl;
+  color: #fff;
+}
+
+main .top-text {
+  background-color: #000;
+  color: #fff;
+  padding: 56px 0;
+  text-align: center;
+}
+
+main .top-text h1 {
+  margin: 0 40px;
+}
+
+main .top-text p {
+  margin: 15px 40px;
+  line-height: 32px;
+}
 
 /* footer */
 
@@ -129,6 +167,9 @@ header .dropdown-item:hover {
   }
 
   /* main */
+  main .top-photo {
+    margin-top: 0;
+  }
 
   /* footer */
 
