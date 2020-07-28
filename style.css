@@ -71,7 +71,6 @@ main .top-photo {
   background-size: cover;
   width: 100%;
   height: calc(9/16 * 100vw);
-  /* background-size: auto 100%; */
 }
 
 main .top-photo h1 {
@@ -174,5 +173,10 @@ main .top-text p {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 20px;
+  }
+
+  main .top-photo {
+    height: 432px;
+    background-position-x: center;
   }
 }
