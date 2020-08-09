@@ -66,58 +66,49 @@ header .dropdown-item:hover {
 
 
 /* main */
-main .top-photo {
-  background-image: url(./cafe.jpg);
+main #top .top-photo {
+  background-image: url(./images/cafe.jpg);
   background-size: cover;
   width: 100%;
   height: calc(9/16 * 100vw);
 }
 
-main .top-photo h1 {
+main #top .top-photo h1 {
   writing-mode: vertical-rl;
   color: #fff;
 }
 
-main .top-text {
+main #top .top-text {
   background-color: #000;
   color: #fff;
   padding: 56px 0;
   text-align: center;
 }
 
-main .top-text p {
+main #top .top-text p {
   line-height: 32px;
 }
 
-main .intro {
-  margin: 80px 40px 0;
+main #intro {
+  margin-top: 80px;
 }
 
-main .intro-photo {
+main #intro .intro-photo {
   width: 100%;
   margin: 0;
 }
 
-main .intro-photo div {
-  margin: 0;
-  padding: 0;
-}
-
-main .intro-photo img {
-  width: 100%;
-}
-
-main .intro-text {
+main #intro .intro-text {
   background-color: #f5f5f5;
-  padding: 50px 0 30px;
+  padding: 50px 20px 30px;
 }
 
-main .intro-text h1 {
+main #intro .intro-text h1 {
   color: #442606;
   font-weight: 700;
 }
 
-main .intro-text p {
+main #intro .intro-text p {
   line-height: 32px;
 }
 
@@ -194,7 +185,7 @@ main .intro-text p {
   }
 
   /* main */
-  main .top-photo {
+  main #top .top-photo {
     margin-top: 0;
   }
 
@@ -207,7 +198,7 @@ main .intro-text p {
     font-size: 20px;
   }
 
-  main .top-photo {
+  main #top .top-photo {
     height: 432px;
     background-position-x: center;
   }
