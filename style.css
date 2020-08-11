@@ -112,6 +112,59 @@ main #intro .intro-text p {
   line-height: 32px;
 }
 
+main #cards {
+  margin-top: 100px;
+}
+
+main #cards .card {
+  border: none;
+}
+
+main #cards .card::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 150px 0 0;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+}
+
+main #cards h1 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: verdana;
+  color: #442606;
+}
+
+main #cards img {
+  border-radius: 0;
+}
+
+main #cards .card-body {
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+
+main #cards .card-body .card-text {
+  line-height: 2.4;
+  margin-bottom: 30px;
+}
+
+main #cards .card-body .card-btn {
+  background-color: #000;
+  display: block;
+  height: 55px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+main #cards .card-body .card-btn p {
+  color: #fff;
+  line-height: 55px;
+}
+
 /* footer */
 
 
