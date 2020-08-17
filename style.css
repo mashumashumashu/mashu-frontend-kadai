@@ -144,30 +144,29 @@ main #cards .card-img-top {
 
 main #cards .card-body {
   background-color: #f5f5f5;
-  padding: 30px;
+  padding: 1.2rem 1.2rem 0.5rem 1.2rem;
 }
 
 main #cards .card-body .card-text {
   line-height: 2.4;
-  margin-bottom: 85px;
 }
 
-main #cards .card-body .card-btn {
+main #cards .card-footer {
+  background-color: #f5f5f5;
+  border: none;
+}
+
+main #cards .card-footer .card-btn {
   background-color: #000;
+  color: #fff;
+  font-size: 14px;
   display: block;
   height: 55px;
-  width: calc(100% - 110px);
-  left: 50%;
-  bottom: 30px;
-  position: absolute;
-  transform: translateX(-50%);
+  margin: auto 20px 0;
+  padding: 0;
   text-align: center;
-}
-
-main #cards .card-body .card-btn span {
-  color: #fff;
   line-height: 55px;
-  font-size: 14px;
+  border-radius: 0;
 }
 
 /* footer */
@@ -261,7 +260,7 @@ main #cards .card-body .card-btn span {
     background-position-x: center;
   }
 
-  main #cards .card {
+  main #cards .row .col-md-4{
     margin-bottom: 30px;
   }
 }
