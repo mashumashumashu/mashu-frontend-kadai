@@ -160,13 +160,15 @@ main #cards .card-footer .card-btn {
   background-color: #000;
   color: #fff;
   font-size: 14px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 55px;
   margin: auto 20px 0;
   padding: 0;
-  text-align: center;
-  line-height: 55px;
   border-radius: 0;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 main #cards .card-footer .card-btn:hover {
