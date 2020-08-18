@@ -169,6 +169,10 @@ main #cards .card-footer .card-btn {
   border-radius: 0;
 }
 
+main #cards .card-footer .card-btn:hover {
+  background-color: #442602;
+}
+
 /* footer */
 
 
@@ -260,7 +264,7 @@ main #cards .card-footer .card-btn {
     background-position-x: center;
   }
 
-  main #cards .row .col-md-4{
+  main #cards .row .col-md-4 {
     margin-bottom: 30px;
   }
 }
