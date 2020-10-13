@@ -1,0 +1,270 @@
+/* common */
+body {
+  font-family: verdana;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: "Times New Roman", serif;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* header */
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 90px;
+  position: absolute;
+}
+
+header nav {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+header .navbar-brand > img {
+  width: 143px;
+  height: 24px;
+}
+
+header .nav-item {
+  padding: 0 10px;
+}
+
+header .nav-link {
+  font-size: 14px;
+  color: #fff;
+}
+
+header .nav-link:hover {
+  color: #999;
+}
+
+header .dropdown-menu {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+header .dropdown-item {
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+  width: 220px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+header .dropdown-item:hover {
+  background-color: #442606;
+  color: #fff;
+}
+
+
+/* main */
+main #top .top-photo {
+  background-image: url(./images/cafe.jpg);
+  background-size: cover;
+  width: 100%;
+  height: calc(9/16 * 100vw);
+}
+
+main #top .top-photo h1 {
+  writing-mode: vertical-rl;
+  color: #fff;
+}
+
+main #top .top-text {
+  background-color: #000;
+  color: #fff;
+  padding: 56px 0;
+  text-align: center;
+}
+
+main #top .top-text p {
+  line-height: 32px;
+}
+
+main #intro {
+  margin-top: 80px;
+}
+
+main #intro .intro-photo {
+  width: 100%;
+  margin: 0;
+}
+
+main #intro .intro-text {
+  background-color: #f5f5f5;
+  padding: 50px 20px 30px;
+}
+
+main #intro .intro-text h1 {
+  color: #442606;
+  font-weight: 700;
+}
+
+main #intro .intro-text p {
+  line-height: 32px;
+}
+
+main #cards {
+  margin-top: 100px;
+}
+
+main #cards .card {
+  border: none;
+}
+
+main #cards .card::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 150px 0 0;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+}
+
+main #cards h1 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: verdana;
+  color: #442606;
+}
+
+main #cards .card-img-top {
+  border-radius: 0;
+}
+
+main #cards .card-body {
+  background-color: #f5f5f5;
+  padding: 1.2rem 1.2rem 0.5rem 1.2rem;
+}
+
+main #cards .card-body .card-text {
+  line-height: 2.4;
+}
+
+main #cards .card-footer {
+  background-color: #f5f5f5;
+  border: none;
+}
+
+main #cards .card-footer .card-btn {
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  margin: auto 20px 0;
+  padding: 15px 0;
+  border-radius: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+main #cards .card-footer .card-btn:hover {
+  background-color: #442602;
+}
+
+/* footer */
+
+
+/* for tablet */
+@media screen and (max-width: 991px) {
+  /* common */
+
+  /* header */
+  header {
+    background-color: #000;
+    height: 60px;
+  }
+
+  header .navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header .navbar-brand {
+    padding-left: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  header .hamburger-button:focus {
+    outline: none;
+  }
+
+  header .hamburger-button span {
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    border-radius: 2px;
+  }
+
+  header .navbar-nav {
+    width: 100%;
+    background-color: #000;
+  }
+
+  header .nav-item {
+    padding: 0 6%;
+  }
+
+  header .nav-item:not(.dropdown) {
+    height: 50px;
+  }
+
+  header .dropdown-toggle {
+    height: 50px;
+  }
+
+  header .nav-link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  header .dropdown-menu {
+    margin-top: 0;
+  }
+
+  header .dropdown-item {
+    width: 100%;
+  }
+
+  /* main */
+  main #top .top-photo {
+    margin-top: 0;
+  }
+
+  /* footer */
+
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  main #top .top-photo {
+    height: 432px;
+    background-position-x: center;
+  }
+
+  main #cards .row .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
