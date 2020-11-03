@@ -64,13 +64,12 @@ header .dropdown-item:hover {
   color: #fff;
 }
 
-
 /* main */
 main #top .top-photo {
   background-image: url(./images/cafe.jpg);
   background-size: cover;
   width: 100%;
-  height: calc(9/16 * 100vw);
+  height: calc(9 / 16 * 100vw);
 }
 
 main #top .top-photo h1 {
@@ -173,8 +172,107 @@ main #cards .card-footer .card-btn:hover {
   background-color: #442602;
 }
 
-/* footer */
+main #newsEvent {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  margin: 100px 0 0;
+  max-width: 100%;
+  background-color: #f5f5f5;
+}
 
+main #newsEvent .title {
+  margin-bottom: 30px;
+}
+
+main #newsEvent .title h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+main #newsEvent .title h6 {
+  padding-left: 1rem;
+}
+
+main #newsEvent .list-group .list-group-item:hover {
+  background-color: #fff;
+}
+
+main #newsEvent .list-group .list-group-item h3 {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main #newsEvent .list-group .list-group-item p {
+  font-size: 12px;
+  color: #999;
+}
+
+main #newsEvent .list-group .thumbnail-item {
+  padding: 0;
+  display: inline-block;
+}
+
+main #newsEvent .list-group .thumbnail-item .event-thumbnail {
+  overflow: hidden;
+  float: left;
+}
+
+main #newsEvent .list-group .thumbnail-item .event-thumbnail img {
+  height: 130px;
+  transition-duration: 0.3s;
+}
+
+main #newsEvent .list-group .thumbnail-item .event-thumbnail img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+main #newsEvent .list-group .thumbnail-item .event-text {
+  padding: 0.75rem 1.25rem;
+  height: 130px;
+  width: calc(100% - 205px);
+  margin-left: 205px;
+}
+
+main #newsEvent .list-group .thumbnail-item .event-text h3 {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+main #newsEvent .list-group .thumbnail-item .event-text p {
+  margin: 0;
+}
+
+main #newsEvent .list-link {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main #newsEvent .list-link a {
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  padding-right: 20px;
+  font-size: 14px;
+}
+
+main #newsEvent .list-link a::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+/* footer */
 
 /* for tablet */
 @media screen and (max-width: 991px) {
@@ -251,7 +349,6 @@ main #cards .card-footer .card-btn:hover {
   }
 
   /* footer */
-
 }
 
 @media screen and (max-width: 768px) {
@@ -266,5 +363,16 @@ main #cards .card-footer .card-btn:hover {
 
   main #cards .row .col-md-4 {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main #newsEvent .list-group .thumbnail-item .event-thumbnail img {
+    display: none;
+  }
+  main #newsEvent .list-group .thumbnail-item .event-text {
+    height: auto;
+    width: 100%;
+    margin: 0;
   }
 }
