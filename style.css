@@ -199,8 +199,16 @@ main #newsEvent .list-group .list-group-item:hover {
 
 main #newsEvent .list-group .list-group-item h3 {
   font-size: 16px;
+  font-weight: 400;
   overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
   text-overflow: ellipsis;
+  transition: color 0.2s ease;
+}
+
+main #newsEvent .list-group .list-group-item h3:hover {
+  color: #442602;
 }
 
 main #newsEvent .list-group .list-group-item p {
@@ -210,12 +218,13 @@ main #newsEvent .list-group .list-group-item p {
 
 main #newsEvent .list-group .thumbnail-item {
   padding: 0;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 main #newsEvent .list-group .thumbnail-item .event-thumbnail {
   overflow: hidden;
-  float: left;
+  display: inline-block;
 }
 
 main #newsEvent .list-group .thumbnail-item .event-thumbnail img {
@@ -229,16 +238,16 @@ main #newsEvent .list-group .thumbnail-item .event-thumbnail img:hover {
 }
 
 main #newsEvent .list-group .thumbnail-item .event-text {
+  height: 100%;
   padding: 0.75rem 1.25rem;
-  height: 130px;
   width: calc(100% - 205px);
-  margin-left: 205px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 main #newsEvent .list-group .thumbnail-item .event-text h3 {
-  display: inline-block;
   width: 100%;
-  vertical-align: middle;
 }
 
 main #newsEvent .list-group .thumbnail-item .event-text p {
@@ -259,17 +268,25 @@ main #newsEvent .list-link a {
   font-size: 14px;
 }
 
+main #newsEvent .list-link a:hover {
+  color: #999;
+}
+
 main #newsEvent .list-link a::after {
   content: "";
   width: 10px;
   height: 10px;
-  border: 0;
   border-top: solid 1px #000;
   border-right: solid 1px #000;
   position: absolute;
   top: 50%;
   right: 0;
   transform: rotate(45deg) translateY(-50%);
+}
+
+main #newsEvent .list-link a:hover::after {
+  border-top: solid 1px #999;
+  border-right: solid 1px #999;
 }
 
 /* footer */
