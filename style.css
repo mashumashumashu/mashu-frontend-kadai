@@ -193,6 +193,10 @@ main #newsEvent .title h6 {
   padding-left: 1rem;
 }
 
+main #newsEvent .list-group {
+  height: 431px;
+}
+
 main #newsEvent .list-group .list-group-item:hover {
   background-color: #fff;
 }
@@ -228,7 +232,7 @@ main #newsEvent .list-group .thumbnail-item .event-thumbnail {
 }
 
 main #newsEvent .list-group .thumbnail-item .event-thumbnail img {
-  height: 130px;
+  height: calc(429px / 3);
   transition-duration: 0.3s;
 }
 
@@ -238,7 +242,6 @@ main #newsEvent .list-group .thumbnail-item .event-thumbnail img:hover {
 }
 
 main #newsEvent .list-group .thumbnail-item .event-text {
-  height: 100%;
   padding: 0.75rem 1.25rem;
   width: calc(100% - 205px);
   display: flex;
@@ -276,8 +279,8 @@ main #newsEvent .list-link a::after {
   content: "";
   width: 10px;
   height: 10px;
-  border-top: solid 1px #000;
-  border-right: solid 1px #000;
+  border: solid 1px;
+  border-color: #000 #000 transparent transparent;
   position: absolute;
   top: 50%;
   right: 0;
@@ -285,8 +288,7 @@ main #newsEvent .list-link a::after {
 }
 
 main #newsEvent .list-link a:hover::after {
-  border-top: solid 1px #999;
-  border-right: solid 1px #999;
+  border-color: #999 #999 transparent transparent;
 }
 
 /* footer */
