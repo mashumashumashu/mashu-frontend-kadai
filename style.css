@@ -176,6 +176,7 @@ main #newsEvent {
   padding-top: 50px;
   padding-bottom: 60px;
   margin: 100px 0 0;
+  padding: 0 50px;
   max-width: 100%;
   background-color: #f5f5f5;
 }
@@ -236,13 +237,13 @@ main #newsEvent .list-group .thumbnail-item .event-thumbnail img {
   transition-duration: 0.3s;
 }
 
-main #newsEvent .list-group .thumbnail-item .event-thumbnail img:hover {
+main #newsEvent .list-group .thumbnail-item:hover .event-thumbnail img {
   transform: scale(1.1);
   transition-duration: 0.3s;
 }
 
 main #newsEvent .list-group .thumbnail-item .event-text {
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.75rem;
   width: calc(100% - 205px);
   display: flex;
   justify-content: flex-start;
@@ -251,6 +252,8 @@ main #newsEvent .list-group .thumbnail-item .event-text {
 
 main #newsEvent .list-group .thumbnail-item .event-text h3 {
   width: 100%;
+  white-space: normal;
+  line-height: 28px;
 }
 
 main #newsEvent .list-group .thumbnail-item .event-text p {
@@ -388,6 +391,9 @@ main #newsEvent .list-link a:hover::after {
 }
 
 @media screen and (max-width: 576px) {
+  main #newsEvent .list-group {
+    height: auto;
+  }
   main #newsEvent .list-group .thumbnail-item .event-thumbnail img {
     display: none;
   }
