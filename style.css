@@ -183,6 +183,8 @@ main #newsEvent {
 
 main #newsEvent .title {
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 
 main #newsEvent .title h1 {
@@ -216,7 +218,7 @@ main #newsEvent .list-group .list-group-item h3:hover {
   color: #442602;
 }
 
-main #newsEvent .list-group .list-group-item p {
+main #newsEvent .list-group .list-group-item span {
   font-size: 12px;
   color: #999;
 }
@@ -234,12 +236,12 @@ main #newsEvent .list-group .thumbnail-item .event-thumbnail {
 
 main #newsEvent .list-group .thumbnail-item .event-thumbnail img {
   height: calc(429px / 3);
-  transition-duration: 0.3s;
+  transition: 0.3s;
 }
 
 main #newsEvent .list-group .thumbnail-item:hover .event-thumbnail img {
   transform: scale(1.1);
-  transition-duration: 0.3s;
+  transition: 0.3s;
 }
 
 main #newsEvent .list-group .thumbnail-item .event-text {
@@ -256,7 +258,7 @@ main #newsEvent .list-group .thumbnail-item .event-text h3 {
   line-height: 28px;
 }
 
-main #newsEvent .list-group .thumbnail-item .event-text p {
+main #newsEvent .list-group .thumbnail-item .event-text span {
   margin: 0;
 }
 
@@ -272,7 +274,7 @@ main #newsEvent .list-link a {
   position: relative;
   padding-right: 20px;
   font-size: 14px;
-  transition-duration: 0.4s;
+  transition: 0.4s;
 }
 
 main #newsEvent .list-link a:hover {
@@ -289,7 +291,8 @@ main #newsEvent .list-link a::after {
   top: 50%;
   right: 0;
   transform: rotate(45deg) translateY(-50%);
-  transition-duration: 0.4s;
+  /* transform: rotate(45deg); */
+  transition: 0.4s;
 }
 
 main #newsEvent .list-link a:hover::after {
@@ -379,23 +382,15 @@ main #newsEvent .list-link a:hover::after {
   h1 {
     font-size: 20px;
   }
-
   main #top .top-photo {
     height: 432px;
     background-position-x: center;
   }
-
   main #cards .row .col-md-4 {
     margin-bottom: 30px;
   }
-}
-
-@media screen and (max-width: 576px) {
   main #newsEvent .list-group {
     height: auto;
-  }
-  main #newsEvent .list-group .thumbnail-item .event-thumbnail img {
-    display: none;
   }
   main #newsEvent .list-group .thumbnail-item .event-text {
     height: auto;
