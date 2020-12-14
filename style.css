@@ -241,7 +241,6 @@ main #newsEvent .list-group .thumbnail-item .event-thumbnail img {
 
 main #newsEvent .list-group .thumbnail-item:hover .event-thumbnail img {
   transform: scale(1.1);
-  transition: 0.3s;
 }
 
 main #newsEvent .list-group .thumbnail-item .event-text {
@@ -288,9 +287,9 @@ main #newsEvent .list-link a::after {
   border: solid 1px;
   border-color: #000 #000 transparent transparent;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 5px);
   right: 0;
-  transform: rotate(45deg) translateY(-50%);
+  transform: rotate(45deg);
   transition: 0.4s;
 }
 
